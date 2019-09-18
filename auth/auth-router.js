@@ -28,7 +28,7 @@ router.post('/login', (req, res) => {
         const token = middleware.generateToken(user)
         res.status(200).json({ token })
       } else {
-        res.status(401).json({ message: 'Invalid Credentials' })
+        res.status(401).json({ message: 'You shall not pass!' })
       }
     })
     .catch(error => {
