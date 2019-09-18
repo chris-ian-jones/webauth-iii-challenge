@@ -8,7 +8,7 @@ module.exports = {
 
 function generateToken(user) {
   const payload = {
-    username: user.username
+    user_id: user.id
   }
   const options = {
     expiresIn: '1d'
