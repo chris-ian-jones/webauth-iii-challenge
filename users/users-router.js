@@ -9,6 +9,6 @@ router.get('/', restricted, (req, res) => {
       res.json( users )
     })
     .catch(error => res.send(error))
-});
+})
 
 module.exports = router
